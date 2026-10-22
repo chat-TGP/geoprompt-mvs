@@ -1,10 +1,10 @@
 # geoprompt-mvs
-Official implementation of "Reliability-Aware Training-Free Geometric Prompting for Frozen MVS".
+Official repository for the paper "Reliability-Aware Training-Free Geometric Prompting for Frozen MVS".
 
-The code will be made publicly available upon publication.
+The source code will be released upon publication.
 
-## Method Overview and Experimental Results
+## Selected Results
 
-The figure compares a frozen MVSAnywhere baseline with **GeoPrompt-MVS** on a representative scene. GeoPrompt-MVS adds depth prompts to posed RGB images and applies reliability-aware prompting (RASA, CAPC, and AGPF) before passing them to the frozen model. The reported error in this example decreases from 9.12% to 2.42%. The chart compares depth accuracy across KITTI, ScanNet, ETH3D, DTU, and T&T.
+The figure previews **GeoPrompt-MVS**, a training-free geometric prompting framework that uses sparse metric depth observations with a frozen MVS model. It shows the reliability-aware prompting components (RASA, CAPC, and AGPF), a representative depth prediction compared with the frozen MVSAnywhere baseline, and a depth-accuracy summary across KITTI, ScanNet, ETH3D, DTU, and T&T. These are selected illustrations of the method and results presented in the paper.
 
-![GeoPrompt-MVS prompting pipeline, depth comparison, and depth accuracy chart](assets/quantitative.png)
+![Selected GeoPrompt-MVS method illustration and experimental results](assets/quantitative.png)
