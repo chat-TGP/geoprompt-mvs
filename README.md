@@ -3,8 +3,8 @@ Official implementation of "Reliability-Aware Training-Free Geometric Prompting 
 
 The code will be made publicly available upon publication.
 
-## Quantitative Experimental Results
+## Method Overview and Experimental Results
 
-The following figure presents selected qualitative and quantitative comparisons of **GeoPrompt-MVS** with MVSAnywhere and PriorDA on representative scenes. It includes predicted depth maps, ground-truth depth maps, and absolute relative error (AbsRel) maps, illustrating the performance of our method in these examples.
+The figure compares a frozen MVSAnywhere baseline with **GeoPrompt-MVS** on a representative scene. GeoPrompt-MVS adds depth prompts to posed RGB images and applies reliability-aware prompting (RASA, CAPC, and AGPF) before passing them to the frozen model. The reported error in this example decreases from 9.12% to 2.42%. The chart compares depth accuracy across KITTI, ScanNet, ETH3D, DTU, and T&T.
 
-![Selected experimental results of GeoPrompt-MVS](assets/quantitative.png)
+![GeoPrompt-MVS prompting pipeline, depth comparison, and depth accuracy chart](assets/quantitative.png)
